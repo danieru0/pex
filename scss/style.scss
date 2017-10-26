@@ -10,6 +10,9 @@
     white-space: nowrap; /* 1 */
 }
 
+
+// --------* NAVBAR *------------
+
 .nav {
     z-index: 1;
     width: 100%;
@@ -37,11 +40,13 @@
             filter: contrast(10);
         }
     }
-    p {
+    h1 {
         margin-left: 10px;
         color: #ffffff;
         font-family: open sans;
         font-size: 10px;
+        font-weight: 300;
+        opacity: 0.8;
     }
 }
 
@@ -103,6 +108,13 @@
         right: 15px;
         top: 13px;
         cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            color: #a2a2a2;
+        }
+        &:focus {
+            color: #a2a2a2;
+        }
     }
 }
 
@@ -162,13 +174,77 @@
     }
 }
 
+// ----------* END NAVBAR *--------------
+
+// ----------* HEADER *-----------
+
 .header {
     width: 100%;
     height: 891px;
     background-image: url("imgs/header.png");
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .header__content {
+        text-align: right;
+        margin-left: 226px;
+        h2 {
+            font-size: 50px;
+            color: #ffffff;
+            font-family: open sans;
+            font-weight: 400;
+        }
+        button {
+            width: 280px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #8824cd;
+            border: none;
+            border-top: 1px solid #b87ce1;
+            border-bottom: 1px solid #624c50;
+            font-size: 16px;
+            font-family: open sans;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: #7713bc;
+                border-top: 1px solid #a76bd0;
+            }
+            &:focus {
+                background-color: #7713bc;
+                border-top: 1px solid #a76bd0;
+            }
+        }
+        p {
+            font-size: 12px;
+            color: #ffffff;
+            font-family: open sans;
+            font-weight: 300;
+            margin-right: 30px;
+        }
+    }
 }
+
+@media (max-width: 1010px) {
+    .header {
+        justify-content: center;
+        .header__content {
+            text-align: center;
+            margin: 0;
+            p {
+                margin: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// ----------* END HEADER *-----------
+
+// ----------* FEATURES *-----------
 
 .features {
     width: 100%;

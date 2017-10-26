@@ -33,11 +33,13 @@
     margin-top: 9px; }
     .nav__logo img:hover {
       filter: contrast(10); }
-  .nav__logo p {
+  .nav__logo h1 {
     margin-left: 10px;
     color: #ffffff;
     font-family: open sans;
-    font-size: 10px; }
+    font-size: 10px;
+    font-weight: 300;
+    opacity: 0.8; }
 
 .nav__hamburger-button {
   position: absolute;
@@ -89,7 +91,12 @@
     position: absolute;
     right: 15px;
     top: 13px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.5s; }
+    .nav__menu-list_item-search .nav__menu-list_item-search-button:hover {
+      color: #a2a2a2; }
+    .nav__menu-list_item-search .nav__menu-list_item-search-button:focus {
+      color: #a2a2a2; }
 
 @media (max-width: 1176px) {
   .nav__logo {
@@ -136,7 +143,53 @@
   height: 891px;
   background-image: url("imgs/header.png");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .header .header__content {
+    text-align: right;
+    margin-left: 226px; }
+    .header .header__content h2 {
+      font-size: 50px;
+      color: #ffffff;
+      font-family: open sans;
+      font-weight: 400; }
+    .header .header__content button {
+      width: 280px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: #8824cd;
+      border: none;
+      border-top: 1px solid #b87ce1;
+      border-bottom: 1px solid #624c50;
+      font-size: 16px;
+      font-family: open sans;
+      color: #ffffff;
+      cursor: pointer;
+      transition: 0.3s; }
+      .header .header__content button:hover {
+        background-color: #7713bc;
+        border-top: 1px solid #a76bd0; }
+      .header .header__content button:focus {
+        background-color: #7713bc;
+        border-top: 1px solid #a76bd0; }
+    .header .header__content p {
+      font-size: 12px;
+      color: #ffffff;
+      font-family: open sans;
+      font-weight: 300;
+      margin-right: 30px; }
+
+@media (max-width: 1010px) {
+  .header {
+    justify-content: center; }
+    .header .header__content {
+      text-align: center;
+      margin: 0; }
+      .header .header__content p {
+        margin: 0;
+        margin-top: 10px; } }
 
 .features {
   width: 100%;
