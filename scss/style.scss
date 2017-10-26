@@ -356,3 +356,52 @@
 }
 
 // ----------* END PINK SECTION *-----------
+
+// ----------* ABOUT *-----------
+
+.about {
+    width: 100%;
+    height: 495px;
+    display: flex;
+    .about__content {
+        align-self: center;
+        justify-content: center;
+        width: 664px;
+        height: 281px;
+        margin-left: 100px;
+        h2 {
+            font-size: 15px;
+            color: #3a4d60;
+            font-family: open sans;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p:first-of-type {
+            margin-top: -5px;
+            font-size: 19px;
+            color: #3a4d60;
+            font-family: open sans;
+            margin-bottom: 40px;
+        }
+        p:last-of-type {
+            font-size: 15px;
+            color: #3a4d60;
+            font-family: open sans;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .about {
+        justify-content: center;
+        img {
+            display: none;
+        }
+        .about__content {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
+// ----------* END ABOUT *-----------
