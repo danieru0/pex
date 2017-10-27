@@ -175,6 +175,7 @@
 }
 
 // ----------* END NAVBAR *--------------
+
 // ----------* HEADER *-----------
 .header {
     width: 100%;
@@ -241,6 +242,7 @@
 }
 
 // ----------* END HEADER *-----------
+
 // ----------* FEATURES *-----------
 .features {
     width: 100%;
@@ -393,6 +395,7 @@
         align-items: center;
         .about__content {
             margin: 0;
+            text-align: center;
         }
         img {
             display: none;
@@ -532,8 +535,11 @@
     .features-article {
         align-items: center;
         justify-content: center;
+        text-align: center;
         .features-article__content {
             margin: 0;
+            align-items: center;
+            
         }
     }
 }
@@ -582,6 +588,7 @@
         align-items: center;
         .about-second__content {
             margin: 0;
+            text-align: center;
         }
         img {
             display: none;

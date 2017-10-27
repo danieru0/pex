@@ -310,7 +310,8 @@
     justify-content: center;
     align-items: center; }
     .about .about__content {
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
     .about img {
       display: none; } }
 
@@ -419,9 +420,11 @@
 @media (max-width: 1010px) {
   .features-article {
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
     .features-article .features-article__content {
-      margin: 0; } }
+      margin: 0;
+      align-items: center; } }
 
 .about-second {
   width: 100%;
@@ -456,7 +459,8 @@
     justify-content: center;
     align-items: center; }
     .about-second .about-second__content {
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
     .about-second img {
       display: none; } }
 
