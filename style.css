@@ -10,6 +10,11 @@
   white-space: nowrap;
   /* 1 */ }
 
+@media (max-width: 375px) {
+  p {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
 .nav {
   z-index: 1;
   width: 100%;
@@ -42,16 +47,21 @@
     opacity: 0.8; }
 
 .nav__hamburger-button {
-  position: absolute;
   font-size: 28px;
   background-color: transparent;
   border: none;
   color: #ffffff;
   cursor: pointer;
-  right: 50px;
+  position: absolute;
+  right: 30px;
   display: none;
-  align-self: center;
-  z-index: 2; }
+  z-index: 2;
+  margin: auto;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px; }
 
 .nav__menu-list {
   margin-right: 35px;
@@ -113,7 +123,6 @@
   .nav__hamburger-button {
     display: block; }
   .nav__menu-list.sticky {
-    background-color: rgba(64, 50, 62, 0.8);
     top: 55px; }
   .nav__menu-list {
     height: 0;
@@ -128,7 +137,8 @@
     margin-right: auto;
     top: 83px;
     line-height: 50px;
-    transition: 1s; }
+    transition: 1s;
+    background-color: rgba(64, 50, 62, 0.8); }
     .nav__menu-list .nav__menu-list_item a {
       margin-right: 0; }
       .nav__menu-list .nav__menu-list_item a:hover {
@@ -137,6 +147,10 @@
         color: #aaa; }
   .nav__menu-list.active {
     height: 320px; } }
+
+@media (max-width: 330px) {
+  .nav__hamburger-button {
+    right: 0; } }
 
 .header {
   width: 100%;
@@ -201,6 +215,10 @@
   position: relative; }
   .features .features__point {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     bottom: -35px; }
   .features .features__content {
     width: 820px;
@@ -314,6 +332,11 @@
       text-align: center; }
     .about img {
       display: none; } }
+
+@media (max-width: 375px) {
+  .about .about__content {
+    width: auto;
+    height: auto; } }
 
 .image-stretch {
   width: 100%;
@@ -463,6 +486,11 @@
       text-align: center; }
     .about-second img {
       display: none; } }
+
+@media (max-width: 375px) {
+  .about-second .about-second__content {
+    width: auto;
+    height: auto; } }
 
 .contact {
   width: 100%;
